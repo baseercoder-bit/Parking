@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary Color Palette */
+  --primary-blue: #3b82f6;
+  --white: #FFFFFF;
+
+  font-family: 'Inter', 'Poppins', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  text-indent: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-indent: 0;
+}
+
+/* Login form spacing */
+.login-header-container {
+  padding-top: 8px;
+}
+
+.login-header-icon {
+  margin-bottom: 12px;
+}
+
+.login-form-container {
+  margin-top: 20px;
+}
+
+.login-form-row {
+  margin-bottom: 12px;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.login-form-row label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.login-form-row:last-of-type {
+  margin-bottom: 24px;
+}
+
+.login-sign-in-button {
+  width: 100%;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+
+/* Ensure proper mobile rendering */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+}
